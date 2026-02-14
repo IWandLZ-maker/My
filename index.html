@@ -103,7 +103,18 @@
             display: block;
         }
 
-        .confession-text {
+        .video-title {
+            text-align: center;
+            margin: 20px 0 30px 0;
+        }
+
+        .video-title h3 {
+            color: #d63384;
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+
+        .music-section {
             background: linear-gradient(135deg, #ffeef8, #fff5f7);
             padding: 30px;
             border-radius: 20px;
@@ -111,21 +122,30 @@
             margin-top: 20px;
         }
 
-        .confession-text h2 {
+        .music-section h2 {
             color: #d63384;
             font-size: 1.8em;
             margin-bottom: 20px;
             text-align: center;
         }
 
-        .confession-display {
-            font-size: 1.2em;
+        audio {
+            width: 100%;
+            margin-bottom: 25px;
+            border-radius: 15px;
+        }
+
+        .lyrics {
+            font-size: 1.1em;
             line-height: 1.8;
             color: #555;
             text-align: center;
             font-style: italic;
             padding: 20px;
             white-space: pre-wrap;
+            background: white;
+            border-radius: 15px;
+            border: 2px solid #ffc0cb;
         }
 
         @media (max-width: 600px) {
@@ -148,24 +168,43 @@
     
     <div class="container">
         <div class="card">
-            <h1>💕 Сен үшін 💕</h1>
+            <h1>💕 Для тебя 💕</h1>
             
             <div class="video-container" id="videoContainer">
+                <!-- ВСТАВЬТЕ ССЫЛКУ НА ВАШЕ ВИДЕО НИЖЕ -->
                 <video id="video" controls>
                     <source src="KDLGE0288.mp4" type="video/mp4">
                     Ваш браузер не поддерживает видео.
                 </video>
             </div>
+            
+            <!-- НАЗВАНИЕ ВИДЕО - ИЗМЕНИТЕ ЗДЕСЬ -->
+            <div class="video-title">
+                <h3>Зеленая книга</h3>
+            </div>
 
-            <div class="confession-text">
-                <h2>💌 Менің айтарым 💌</h2>
-                <!-- ИЗМЕНИТЕ ТЕКСТ НИЖЕ НА СВОЕ ПРИЗНАНИЕ -->
-                <div class="confession-display">
-Мен саған мен үшін қаншалықты маңызды екеніңді айтқым келеді...
+            <!-- МУЗЫКА -->
+            <div class="music-section">
+                <h2>Gana -- Marhaba Sabi</h2>
+                
+                <!-- ВСТАВЬТЕ ССЫЛКУ НА АУДИО НИЖЕ -->
+                <audio controls>
+                    <source src="7477409637980048133.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио.
+                </audio>
+                
+                <!-- ТЕКСТ ПЕСНИ - ИЗМЕНИТЕ ЗДЕСЬ -->
+                <div class="lyrics">
+Keşіr janym Jan azaptan arylsyn
 
-Сенімен өткен әрбір күн — мен үшін ерекше сыйлық. Сенің жанында болу — бақыт!
-
-Мен сені жақсы көремін! ❤️
+Süiemіn senі ğana
+Janym alqynyp
+Süiemіn senі ğana
+Janym altynym
+Süiemіn senі ğana
+Janym alqynyp
+Süiemіn senі ğana
+Janym altynym
                 </div>
             </div>
         </div>
@@ -190,7 +229,4 @@
         setInterval(createHeart, 800);
     </script>
 </body>
-
 </html>
-
-
